@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Genre Button Screen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GenreButtonScreen" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="cT7-31-Ryv">
+                                <rect key="frame" x="57" y="133.5" width="260" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVc-a1-dn2">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="tPr-gA-fmi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <state key="normal" title="Hip Hop">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="GenreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eRt-0v-dlM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKf-RQ-aPS">
+                                        <rect key="frame" x="0.0" y="120" width="260" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="9fZ-ZI-UUP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <state key="normal" title="Pop">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="GenreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a9G-fD-kRJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWk-rB-b8v">
+                                        <rect key="frame" x="0.0" y="240" width="260" height="60"/>
+                                        <color key="backgroundColor" red="0.68123413705583757" green="0.00091731097863680393" blue="0.49311360555082573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="obs-sr-12e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <state key="normal" title="Country">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="GenreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PxF-Gf-XYE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Ejb-HY-TSK"/>
+                                    <constraint firstAttribute="width" constant="260" id="ZGf-l4-eCx"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdh-zZ-mcZ">
+                                <rect key="frame" x="57" y="503.5" width="120" height="60"/>
+                                <color key="backgroundColor" red="0.68123413705583757" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="egc-zB-ZbW"/>
+                                    <constraint firstAttribute="width" constant="120" id="qeO-JH-zxL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="StopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vpJ-aQ-LJL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrf-m4-ynf">
+                                <rect key="frame" x="197" y="503.5" width="120" height="60"/>
+                                <color key="backgroundColor" red="0.18738783160327419" green="0.68123413705583757" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CXs-4S-vBb"/>
+                                    <constraint firstAttribute="width" constant="120" id="NC4-sB-BhD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="NextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HdI-sB-Y42"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27450980392156865" green="0.054901960784313725" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yrf-m4-ynf" firstAttribute="centerY" secondItem="qdh-zZ-mcZ" secondAttribute="centerY" id="CEb-gZ-SwF"/>
+                            <constraint firstItem="qdh-zZ-mcZ" firstAttribute="top" secondItem="cT7-31-Ryv" secondAttribute="bottom" constant="70" id="Gkb-Bq-5VX"/>
+                            <constraint firstItem="yrf-m4-ynf" firstAttribute="trailing" secondItem="cT7-31-Ryv" secondAttribute="trailing" id="TSl-kD-bYS"/>
+                            <constraint firstItem="qdh-zZ-mcZ" firstAttribute="leading" secondItem="AVc-a1-dn2" secondAttribute="leading" id="V77-kK-WID"/>
+                            <constraint firstItem="cT7-31-Ryv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h1f-HG-bzp"/>
+                            <constraint firstItem="cT7-31-Ryv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="zt1-YT-nJw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="GenreButtonTapped" destination="AVc-a1-dn2" id="4SM-ba-cLj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
